@@ -8,6 +8,7 @@
 
 #import "YZTableViewController.h"
 #import "UIScrollView+HeaderScaleImage.h"
+#import "AnimationCell.h"
 static NSString * const ID = @"cell";
 
 static CGFloat const imageViewH = 200;
@@ -43,22 +44,37 @@ static CGFloat const imageViewH = 200;
     self.tableView.tableHeaderView = headerView;
     
     
+    [self.tableView registerClass:[AnimationCell class] forCellReuseIdentifier:ID];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+
 }
 
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return 50;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"数据展示%ld",indexPath.row];
+    AnimationCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    cell.titleLabel.text = [NSString stringWithFormat:@"数据展示%ld",indexPath.row];
+
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AnimationCell *animationCell = (AnimationCell *)cell;
+
+    [animationCell show];
+}
+
+
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    AnimationCell *animationCell = (AnimationCell *)cell;
+    [animationCell hide];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

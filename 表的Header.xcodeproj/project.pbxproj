@@ -16,6 +16,8 @@
 		8C383AF81D587D66007553AD /* __HeaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C383AF71D587D66007553AD /* __HeaderUITests.m */; };
 		8C383B071D587D75007553AD /* YZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C383B061D587D75007553AD /* YZTableViewController.m */; };
 		8C383B0A1D587DB0007553AD /* UIScrollView+HeaderScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C383B091D587DB0007553AD /* UIScrollView+HeaderScaleImage.m */; };
+		E9D9B8A31D815B8B00563E10 /* AnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D9B8A11D815B8B00563E10 /* AnimationCell.m */; };
+		E9D9B8A81D815E3C00563E10 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D9B8A71D815E3C00563E10 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		8C383B061D587D75007553AD /* YZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTableViewController.m; sourceTree = "<group>"; };
 		8C383B081D587DB0007553AD /* UIScrollView+HeaderScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HeaderScaleImage.h"; sourceTree = "<group>"; };
 		8C383B091D587DB0007553AD /* UIScrollView+HeaderScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HeaderScaleImage.m"; sourceTree = "<group>"; };
+		E9D9B8A01D815B8B00563E10 /* AnimationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCell.h; sourceTree = "<group>"; };
+		E9D9B8A11D815B8B00563E10 /* AnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationCell.m; sourceTree = "<group>"; };
+		E9D9B8A61D815E3C00563E10 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		E9D9B8A71D815E3C00563E10 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				8C383B061D587D75007553AD /* YZTableViewController.m */,
 				8C383B081D587DB0007553AD /* UIScrollView+HeaderScaleImage.h */,
 				8C383B091D587DB0007553AD /* UIScrollView+HeaderScaleImage.m */,
+				E9D9B8A01D815B8B00563E10 /* AnimationCell.h */,
+				E9D9B8A11D815B8B00563E10 /* AnimationCell.m */,
+				E9D9B8A61D815E3C00563E10 /* UIView+Extension.h */,
+				E9D9B8A71D815E3C00563E10 /* UIView+Extension.m */,
 				8C383ADB1D587D66007553AD /* Main.storyboard */,
 				8C383ADE1D587D66007553AD /* Assets.xcassets */,
 				8C383AE01D587D66007553AD /* LaunchScreen.storyboard */,
@@ -275,10 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D9B8A81D815E3C00563E10 /* UIView+Extension.m in Sources */,
 				8C383B071D587D75007553AD /* YZTableViewController.m in Sources */,
 				8C383AD71D587D66007553AD /* AppDelegate.m in Sources */,
 				8C383AD41D587D66007553AD /* main.m in Sources */,
 				8C383B0A1D587DB0007553AD /* UIScrollView+HeaderScaleImage.m in Sources */,
+				E9D9B8A31D815B8B00563E10 /* AnimationCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +516,7 @@
 				8C383AFE1D587D66007553AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C383AFF1D587D66007553AD /* Build configuration list for PBXNativeTarget "表的HeaderTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +525,7 @@
 				8C383B011D587D66007553AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C383B021D587D66007553AD /* Build configuration list for PBXNativeTarget "表的HeaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +534,7 @@
 				8C383B041D587D66007553AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
