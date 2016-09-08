@@ -57,32 +57,7 @@ static CGFloat const imageViewH = 200;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    cell.textLabel.textColor = [UIColor redColor];
-    
-    NSString *text = nil;
-    switch (indexPath.row) {
-        case 0:
-        {
-            text = @"MacOS";
-            break;
-        }
-        case 1:
-        {
-            text = @"Android";
-            break;
-        }
-        case 2:
-        {
-            text = @"iOS";
-            break;
-        }
-
-        default:
-            break;
-    }
-
-    cell.textLabel.text = text;
-    
+    cell.textLabel.text = [NSString stringWithFormat:@"数据展示%ld",indexPath.row];
     return cell;
 }
 
